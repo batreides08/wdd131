@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Bryan Quiros</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals, Bryan Quiros, Web Development basics and projects">
+    <meta name="author" content="Bryan Quiros">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131 – Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/bryanquiros08/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/93?lang=eng&id=p36-p37#p36">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Card Title 1</h2>
+            <img src="images/BryanQuirosMilan.webp" alt="Profile picture">
+            <p>This is a picture of me in Milan, Italy. </p>
+        </section>
+
+        <section class="card">
+            <h2>Card Title 2</h2>
+            <img src="images/Flag_of_Costa_Rica.webp" alt="CR flag">
+            <p>This is the official flag of Costa Rica.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Bryan Quiros, Costa Rica</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+        // Set last modified date
+        document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
+    </script>
+</body>
+
+</html>
