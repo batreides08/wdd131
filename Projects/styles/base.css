@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --primary-color: #223F64;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: var(--font-primary);
+  font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -31,7 +31,7 @@ header {
 }
 
 header h1 {
-  font-family: var(--font-heading);
+  font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
 }
 
@@ -68,10 +68,10 @@ nav ul li a:hover {
 
 /* Main content */
 main {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 1.5rem;
   padding: 0 1rem;
 }
@@ -85,6 +85,7 @@ main {
 }
 
 .card h2 {
+  margin-bottom: 1rem;
   background-color: var(--primary-color);
   color: white;
   padding: 0.5rem;
@@ -116,4 +117,76 @@ footer span#currentyear,
 footer span#lastModified {
   font-weight: bold;
   color: var(--secondary-color);
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-content img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.country-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.country-info img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 0.3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.country-info figcaption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.25rem;
+}
+.country-info p {
+  flex: 1;
+  margin: 0;
+}
+
+.country-info figure {
+  margin: 0;
+  text-align: center;
+}
+.caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #666;
+  margin-left: 130px; /* Align caption under the flag */
+  margin-top: 0.25rem;
+}
+.card h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.centered-heading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
 }

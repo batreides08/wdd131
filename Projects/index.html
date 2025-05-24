@@ -9,11 +9,12 @@
         content="WDD 131 – Dynamic Web Fundamentals, Bryan Quiros, Web Development basics and projects">
     <meta name="author" content="Bryan Quiros">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>WDD 131 – Dynamic Web Fundamentals</h1>
+        <h1>WDD 131 – Dynamic Web Fundamentals - Bryan Quiros</h1>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/bryanquiros08/">LinkedIn</a></li>
@@ -28,30 +29,50 @@
 
     <main>
         <section class="card">
-            <h2>Card Title 1</h2>
-            <img src="images/BryanQuirosMilan.webp" alt="Profile picture">
-            <p>This is a picture of me in Milan, Italy. </p>
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>My name is Bryan and was born and raised in Costa Rica. I'm a Process Engineer with a passion for problem-solving, 
+                        data-driven decision-making, and innovation. With a background in Industrial Engineering, I'm currently 
+                        expanding my expertise in Software Development to bridge the gap between operational efficiency and digital transformation.
+                        I've led initiatives focused on process automation, Lean Six Sigma improvements, and cross-functional collaboration in global environments.</p>
+                </div>
+                <img src="images/BryanQuirosMilan.webp" alt="Profile picture">
+            </div>
+
+            <h3 class="centered-heading">San Jose, Costa Rica</h3>
+            <div class="country-info">
+             <figure>
+                <img src="images/Flag_of_Costa_Rica.webp" alt="Flag of Costa Rica">
+                <figcaption>Official Flag of Costa Rica</figcaption>
+             </figure>
+             <p>
+                    Costa Rica is a vibrant Central American nation celebrated for its rich biodiversity, peaceful society, and environmental 
+                    leadership. With over 25% of its land protected as national parks and reserves, it's a global model for conservation.
+                    The country abolished its military in 1948, choosing to invest in education and healthcare, and today boasts a literacy
+                    rate of over 97%. Nearly 99% of its electricity comes from renewable sources, primarily hydro, wind, and geothermal energy.
+             </p>
+            </div>
+            
         </section>
 
         <section class="card">
-            <h2>Card Title 2</h2>
-            <img src="images/Flag_of_Costa_Rica.webp" alt="CR flag">
-            <p>This is the official flag of Costa Rica.</p>
+          <h2>Web Dev Resources</h2>
+          <ul class="resource-list">
+            <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+            <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+           </ul>
         </section>
+
     </main>
 
     <footer>
         <p>&copy; <span id="currentyear"></span> Bryan Quiros, Costa Rica</p>
         <p id="lastModified"></p>
     </footer>
-
-    <script>
-        // Set current year
-        document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-        // Set last modified date
-        document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
-    </script>
 </body>
 
 </html>
