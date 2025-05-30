@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+  /* Hide hamburger menu in large view */
+  #menu {
+    display: none;
+  }
+
+  /* Header layout */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  /* Horizontal nav */
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  /* Hover effect */
+  nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+
+  /* Centered main content */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Grid layout for gallery */
+  .temple-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+
