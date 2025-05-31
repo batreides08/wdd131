@@ -1,5 +1,20 @@
-// Set the current year with id="currentyear"
+
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Set the last modified date in the paragraph with id="lastModified"
+
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
+
+// Hamburger menu toggle
+const menuButton = document.getElementById("menu");
+const navigation = document.querySelector(".navigation");
+
+menuButton.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+
+  // Toggle the hamburger icon 
+  if (navigation.classList.contains("open")) {
+    menuButton.textContent = "✖";
+  } else {
+    menuButton.textContent = "☰";
+  }
+});
