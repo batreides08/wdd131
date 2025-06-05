@@ -123,12 +123,6 @@ footer {
     content: "";
   }
 
-  .weather::before {
-    content: "🌤️";
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-  }
+ 
 }
 
