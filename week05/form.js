@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Set dynamic current date/time in footer
+  // Set dynamic current date/time 
   const footerDate = document.getElementById("last-modified");
   if (footerDate) {
     const now = new Date();
