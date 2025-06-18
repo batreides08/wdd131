@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Review</title>
+  <link rel="stylesheet" href="form.css" />
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <main>
+    <form action="review.html" method="get">
+      <h1>Product Review</h1>
+
+      <label for="product">Product Name</label>
+      <select id="product" name="product" required>
+        <option disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" id="star1" value="1" required /> &#9733;</label>
+        <label><input type="radio" name="rating" id="star2" value="2" /> &#9733;&#9733;</label>
+        <label><input type="radio" name="rating" id="star3" value="3" /> &#9733;&#9733;&#9733;</label>
+        <label><input type="radio" name="rating" id="star4" value="4" /> &#9733;&#9733;&#9733;&#9733;</label>
+        <label><input type="radio" name="rating" id="star5" value="5" /> &#9733;&#9733;&#9733;&#9733;&#9733;</label>
+      </fieldset>
+
+      <label for="install-date">Date of Installation</label>
+      <input type="date" id="install-date" name="install-date" required />
+
+      <fieldset>
+        <legend>Which features did you find useful in the product?<br /><small>(Check all that apply)</small></legend>
+        <label><input type="checkbox" id="durability" name="features" value="Durability" /> Durability</label>
+        <label><input type="checkbox" id="ease" name="features" value="Ease of Use" /> Ease of Use</label>
+        <label><input type="checkbox" id="performance" name="features" value="Performance" /> Performance</label>
+        <label><input type="checkbox" id="design" name="features" value="Design" /> Design</label>
+      </fieldset>
+
+      <label for="review">Written Review <small>(Optional)</small></label>
+      <textarea id="review" name="review" rows="4"></textarea>
+
+      <label for="username">Your Name <small>(Optional)</small></label>
+      <input type="text" id="username" name="username" />
+
+      <input type="submit" value="Post Review" />
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 ✨ Bryan Quiros ✨ Costa Rica<br />
+       <span id="last-modified">Last Modification: ...</span>
+    </p>
+  </footer>
+</body>
+</html>
